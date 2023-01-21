@@ -4,7 +4,7 @@ import HeroComponent from './HeroComponent'
 
 const FrameInner = () => {
   return (
-    <div className={`bg-white h-5/6 w-5/6 rounded-[50px] border-white border-2`}>
+    <div className={`bg-white h-5/6 w-3/4 rounded-[50px] border-white border-2`}>
 
         {/* Navbar */}
         <Navbar/>

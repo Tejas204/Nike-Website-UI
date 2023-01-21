@@ -27,16 +27,19 @@ export const navItems = [
         name: 'Lebagh',
         price: '$190',
         image: shoe1,
+        id: 1
     },
     {
         name: 'One Take',
         price: '$180',
         image: shoe2,
+        id: 2
     },
     {
         name: 'Hurahe',
         price: '$175',
         image: shoe3,
+        id: 3
     },
     {
         name: 'Vomero',
@@ -47,5 +50,6 @@ export const navItems = [
         name: 'Pegasus',
         price: '$180',
         image: shoe5,
+        id: 4
     }
   ]
