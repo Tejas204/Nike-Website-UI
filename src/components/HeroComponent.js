@@ -38,7 +38,7 @@ const HeroComponent = () => {
             {/* Shoe list */}
             <div>
               {/* Generate list here */}
-              <ul className='flex flex-row space-x-3'>
+              <ul className='flex flex-row space-x-8'>
                 {shoeItems.map((shoeItem, index)=>{
                     return <li key={index}>
                     <div className='flex flex-col bg-[#EAEAEA] h-28 w-32 mt-14 rounded-2xl justify-center relative'>
