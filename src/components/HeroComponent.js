@@ -9,7 +9,7 @@ import addSymbol from '../images/add.png';
 
 const HeroComponent = () => {
   return (
-    <div className='h-3/4 w-1/2 mt-4'>
+    <div className='h-3/4 w-1/2 mt-4 relative flex flex-row'>
         <div className='ml-24 p-2'>
           {/* Shoe type */}
             <p className='text-[40px] font-bold'>
@@ -63,6 +63,8 @@ const HeroComponent = () => {
               {/* List item ends here */}
             </div>
         </div>
+
+        
 
         {/* <ul>
                 {shoeItems.map((shoeItem, index)=>{

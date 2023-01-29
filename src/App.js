@@ -8,7 +8,7 @@ import FrameOuter from './components/FrameOuter';
 
 function App() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <FrameOuter/>
     </div>
   );
