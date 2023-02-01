@@ -5,6 +5,7 @@ import shoe2 from '../images/shoe2.png';
 import shoe3 from '../images/shoe3.png';
 import shoe4 from '../images/shoe4.png';
 import shoe5 from '../images/shoe5.png';
+import shoe7 from '../images/shoe7.png';
 import addSymbol from '../images/add.png';
 
 const HeroComponent = () => {
@@ -41,21 +42,23 @@ const HeroComponent = () => {
               <ul className='flex flex-row space-x-8'>
                 {shoeItems.map((shoeItem, index)=>{
                     return <li key={index}>
-                    <div className='flex flex-col bg-[#EAEAEA] h-28 w-32 mt-14 rounded-2xl justify-center relative hover:border-2 hover:border-[#FC681C] hover:-translate-y-2 ease-in-out duration-100'>
-                      <img src={shoeItem.image} className='-rotate-45 -translate-y-10 -translate-x-2'></img>
-                      <div className='flex flex-row space-x-4 p-1 -translate-y-16'>
-                          <div className='flex flex-col'>
-                              <p className='text-[10px] font-medium'>NIKE AIR</p>
-                              <p className='text-xs font-bold'>{shoeItem.name}</p>
+                      <a href='#'>
+                        <div className='flex flex-col bg-[#EAEAEA] h-28 w-32 mt-14 rounded-2xl justify-center relative hover:border-2 hover:border-[#FC681C] hover:-translate-y-2 ease-in-out duration-100'>
+                          <img src={shoeItem.image} className='-rotate-45 -translate-y-10 -translate-x-2'></img>
+                          <div className='flex flex-row space-x-4 p-1 -translate-y-16'>
+                              <div className='flex flex-col'>
+                                  <p className='text-[10px] font-medium'>NIKE AIR</p>
+                                  <p className='text-xs font-bold'>{shoeItem.name}</p>
+                              </div>
+                              <p className='font-bold text-[20px]'>{shoeItem.price}</p>
                           </div>
-                          <p className='font-bold text-[20px]'>{shoeItem.price}</p>
-                      </div>
 
-                      {/* Add item icon */}
-                      <div className='absolute flex justify-center items-center h-6 w-6 bottom-0 -right-2 rounded-md bg-black '>
-                          <a href='https://icons8.com/icons/set/plus'><img src={addSymbol} className='h-4 w-4'></img></a>
-                      </div>
-                    </div>
+                          {/* Add item icon */}
+                          <div className='absolute flex justify-center items-center h-6 w-6 bottom-0 -right-2 rounded-md bg-black '>
+                              <a href='https://icons8.com/icons/set/plus'><img src={addSymbol} className='h-4 w-4'></img></a>
+                          </div>
+                        </div>
+                    </a>
                 </li>
                 })}
                 
