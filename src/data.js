@@ -9,16 +9,16 @@ import shoe5 from './images/shoe5.png';
 
 export const navItems = [
     {
-      name: 'Men',
+      name: 'MEN',
     },
     {
-      name: 'Women',
+      name: 'WOMEN',
     },
     {
-      name: 'Sale',
+      name: 'SALE',
     },
     {
-      name: 'Sneakers',
+      name: 'SNKRS',
     },
   ];
 

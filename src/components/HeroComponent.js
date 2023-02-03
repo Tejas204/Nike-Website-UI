@@ -12,7 +12,7 @@ const HeroComponent = ({shoeIdReceived}) => {
   // This value is passed to the parent
 
 
-  const [[shoeImage, shoeName], fetchShoeId] = useState([shoe4, "Lebagh"]);
+  const [[shoeImage, shoeName, shoePrice], fetchShoeId] = useState([shoe4, "Lebagh", '$190']);
   shoeIdReceived(shoeImage);
 
   return (
@@ -36,7 +36,7 @@ const HeroComponent = ({shoeIdReceived}) => {
             {/* Amount and Call to Action */}
             <div className='flex flex-row space-x-10 mt-2 pl-1'>
               {/* Display amount */}
-              <p className='text-2xl p-4 hover:text-[#FC681C] ease-in-out duration-200'>$190</p>
+              <p className='text-2xl p-4 hover:text-[#FC681C] ease-in-out duration-200'>{shoePrice}</p>
 
               {/* CTA --> Add to card*/}
               <button type='submit' className='rounded-xl bg-white text-black shadow-lg p-3 hover:border-2 hover:border-[#FC681C] ease-in-out duration-200'>Add to cart</button>
@@ -47,7 +47,7 @@ const HeroComponent = ({shoeIdReceived}) => {
               {/* Generate list here */}
               <ul className='flex flex-row space-x-8'>
                 {shoeItems.map((shoeItem, index)=>{
-                    return <li key={index} onClick={()=>fetchShoeId([shoeItem.image, shoeItem.name])}>
+                    return <li key={index} onClick={()=>fetchShoeId([shoeItem.image, shoeItem.name, shoeItem.price])}>
                         <div className='flex flex-col bg-[#EAEAEA] h-28 w-32 mt-14 rounded-2xl justify-center relative hover:border-2 hover:border-[#FC681C] hover:-translate-y-2 ease-in-out duration-100'>
                           <img src={shoeItem.image} className='-rotate-45 -translate-y-10 -translate-x-2'></img>
                           <div className='flex flex-row space-x-4 p-1 -translate-y-16'>
