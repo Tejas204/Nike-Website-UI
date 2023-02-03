@@ -18,7 +18,7 @@ export const navItems = [
       name: 'SALE',
     },
     {
-      name: 'SNKRS',
+      name: 'SNEAKERS',
     },
   ];
 
