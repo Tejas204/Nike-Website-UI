@@ -11,7 +11,8 @@ const HeroComponent = ({shoeIdReceived}) => {
   // The fetchShoeId hooks on to the list item sets the shodId of the clicked object
   // This value is passed to the parent
 
-  const [shoeImage, fetchShoeId] = useState(shoe4);
+
+  const [[shoeImage, shoeName], fetchShoeId] = useState([shoe4, "Lebagh"]);
   shoeIdReceived(shoeImage);
 
   return (
@@ -24,7 +25,7 @@ const HeroComponent = ({shoeIdReceived}) => {
 
             {/* Shoe name */}
             <p className='text-[#FC681C] text-[60px]'>
-                Lebagh
+                {shoeName}
             </p>
 
             {/* Shoe description */}
@@ -46,7 +47,7 @@ const HeroComponent = ({shoeIdReceived}) => {
               {/* Generate list here */}
               <ul className='flex flex-row space-x-8'>
                 {shoeItems.map((shoeItem, index)=>{
-                    return <li key={index} onClick={()=>fetchShoeId(shoeItem.image)}>
+                    return <li key={index} onClick={()=>fetchShoeId([shoeItem.image, shoeItem.name])}>
                         <div className='flex flex-col bg-[#EAEAEA] h-28 w-32 mt-14 rounded-2xl justify-center relative hover:border-2 hover:border-[#FC681C] hover:-translate-y-2 ease-in-out duration-100'>
                           <img src={shoeItem.image} className='-rotate-45 -translate-y-10 -translate-x-2'></img>
                           <div className='flex flex-row space-x-4 p-1 -translate-y-16'>

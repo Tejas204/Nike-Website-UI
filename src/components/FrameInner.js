@@ -40,10 +40,6 @@ const FrameInner = () => {
         <div className='absolute translate-x-[130%] -translate-y-[100%] -rotate-[45deg]'>
             <img src={shoeImage} className="h-[559px] w-[447px]"></img>
         </div>
-
-      {/* Just do it */}
-      
-        
     </div>
   )
 }
