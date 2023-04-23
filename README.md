@@ -1,10 +1,13 @@
 # Nike Website UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](src/images/UI.png)
+
+
+### Overview
 
 This SPA was developed using React, HTML and Tailwind CSS. A simple project, it uses one useState hook to display the shoe which has been clicked. The image data is fetched when the shoe item gets clicked, and the same is passed to the parent component so that the bigger image of the shoe is rendered. Moreover, the entire page has been divided into reusable components. 
 
-## Constraints
+### Constraints
 
 - The website is not responsive. 
 - The number of functionalities can be increased.
@@ -19,5 +22,3 @@ This SPA was developed using React, HTML and Tailwind CSS. A simple project, it 
 
 Many thanks to **Nikhil Pawar** and his [UI design amazing tutorial](https://www.youtube.com/watch?v=_gX-lwyMLwI) for making the Figma file available to all.
 
-### User Interface
-![](src/images/UI.png)
