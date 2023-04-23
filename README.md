@@ -20,5 +20,5 @@ This SPA was developed using React, HTML and Tailwind CSS. A simple project, it 
 
 ### UI Credits
 
-Many thanks to **Nikhil Pawar** and his [UI design amazing tutorial](https://www.youtube.com/watch?v=_gX-lwyMLwI) for making the Figma file available to all.
+Many thanks to **Nikhil Pawar** and his [amazing UI design tutorial](https://www.youtube.com/watch?v=_gX-lwyMLwI) for making the Figma file available to all.
 
